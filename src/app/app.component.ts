@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
+  public isValueDisplayed: boolean = false;
+  public readonly value = 'Hello';
+
   constructor() {}
+
+  public toggleValueVisibility() {
+    this.isValueDisplayed = !this.isValueDisplayed;
+  }
 }

@@ -1,3 +1,8 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-button expand="block" (click)="toggleValueVisibility()">
+    Say Hello
+  </ion-button>
+  @if (isValueDisplayed) {
+  <h1>{{ value }}</h1>
+  }
 </ion-app>
